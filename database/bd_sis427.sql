@@ -17,7 +17,8 @@ COMMENT ON DATABASE bd_sis427
 
 ------- Crear la tabla persona --------
 CREATE TABLE persona (
-    ci INT PRIMARY KEY,
+    id_persona SERIAL PRIMARY KEY,
+    ci INT NOT NULL UNIQUE,
     nombres VARCHAR(50) NOT NULL,
     apellidos VARCHAR(50) NOT NULL,
     contraseña VARCHAR(255) NOT NULL,

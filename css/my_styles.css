@@ -1,0 +1,64 @@
+.bg-custom {
+    background-color: #171b177a;
+}
+.bg-custom-add {
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.navbar {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.bg-icon-custom {
+    background-color: #6f859b;
+}
+.color-text-custom {
+    color: #6f859b;
+}
+.bg-btn-custom {
+    background-color: #6f859b;
+    margin-left: 10px;
+}
+.bg-btn-custom:hover {
+    background-color: #919faf;
+}
+.text-nav {
+    color: #fefefe;
+}
+.text-nav:hover {
+    color: #919faf;
+}
+.text-nav:focus {
+    color: #919faf;
+}
+
+.main-custom{
+    background-image: url(../images/bg-home2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: auto;
+    margin: 0 auto;
+}
+.bienvenido {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.bienvenido h1 {
+    color: #fefefe;
+    font-size: 50px;
+    font-weight: bold;
+}
+.bienvenido p {
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: bold;
+}

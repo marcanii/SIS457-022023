@@ -15,6 +15,7 @@ if($row > 0){
     $_SESSION['contrasena'] = $contrasena;
     $_SESSION['nombres'] = $row['nombres'];
     $_SESSION['apellidos'] = $row['apellidos'];
+    $_SESSION['nivel'] = $row['nivel'];
     //echo "Bienvenido";
     header("Location: home.php");
 }

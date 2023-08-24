@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Agregar</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/my_styles.css">
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+    <div class="p-5 rounded-5 text-secondary shadow bg-custom" style="width: 25rem">
+        <div class="d-flex justify-content-center">
+            <img src="./assets/add-user.png" width="100" height="100">
+        </div>
+        <div class="text-center fs-1 fw-bold text-white">Registrar</div>
+
+        <form action="add.php" method="post">
+            <div class="input-group mt-4">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/ci.png" width="16", height="16">
+                </div>
+                <input class="form-control bg-light" type="number" placeholder="Carnet de Identidad" name="ci" required>
+            </div>      
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/names.png" width="16" height="16">
+                </div>
+                <input class="form-control bg-light" type="text" placeholder="Nombres" name="nombre" required>
+            </div>
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/names.png" width="16" height="16">
+                </div>
+                <input class="form-control bg-light" type="text" placeholder="Apellidos" name="apellido" required>
+            </div>
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/genero.png" width="16" height="16">
+                </div>
+                <select id="selectSexo" name="sexo" class="form-control btn-light" required>
+                    <option value="" selected disabled>Sexo</option>
+                    <option value="M">Mujer</option>
+                    <option value="H">Hombre</option>
+                </select>
+            </div>
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/email.png" width="16" height="16">
+                </div>
+                <input class="form-control bg-light" type="text" placeholder="Correo" name="email" required>
+            </div>
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/password.png" width="16" height="16">
+                </div>
+                <input class="form-control bg-light" type="password" placeholder="Contraseña" name="contrasena" required>
+            </div>
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/phone.png" width="16" height="16">
+                </div>
+                <input class="form-control bg-light" type="number" placeholder="Celular" name="celular" required>
+            </div>
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/carrera.png" width="16" height="16">
+                </div>
+                <select id="selectCarrera" name="carrera" class="form-control btn-light" required>
+                    <option value="" disabled selected>Carrera</option>
+                    <option value="Ing. en Ciencias de la Computación">Ing. en Ciencias de la Computación</option>
+                    <option value="Ing. Sistemas">Ing. Sistemas</option>
+                    <option value="Ing. Tec. Información y Seg.">Ing. Tec. Información y Seg.</option>
+                    <option value="Ing. Eléctrica">Ing. Eléctrica</option>
+                    <option value="Ing. Electrónica">Ing. Electrónica</option>
+                    <option value="Ing. Mecánica">Ing. Mecánica</option>
+                    <option value="Ing. Civil">Ing. Civil</option>
+                    <option value="Ing. Química">Ing. Química</option>
+                    <option value="Ing. Petrolera">Ing. Petrolera</option>
+                    <option value="Ing. Industrial">Ing. Industrial</option>
+                </select>
+            </div>
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-icon-custom">
+                    <img src="./assets/carrera.png" width="16" height="16">
+                </div>
+                <select id="selectnivelAcceso" name="nivelAcceso" class="form-control btn-light" required>
+                    <option value="" disabled selected>Nivel de acceso</option>
+                    <option value="0">Admin</option>
+                    <option value="1">Usuario</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Registrar" class="btn bg-btn-custom text-white w-100 mt-4 fw-semibold shadow-sm">
+            <a href="home.php" class="btn bg-btn-custom text-white w-100 mt-4 fw-semibold shadow-sm">Cancelar</a>
+        </form>
+    </div>
+    <!-- Enlace a Bootstrap JS (opcional, para ciertas funcionalidades) -->
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/my_script.js"></script>
+</body>
+</html>
