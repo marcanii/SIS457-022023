@@ -1,3 +1,7 @@
+<?php
+// Iniciar la sesión
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +11,31 @@
     <!-- Enlace a Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
+
+    <style>
+        .bg-custom {
+            background-color: #171b177a;
+        }
+        .bg-icon-custom{
+            background-color: #5cd2c6;
+        }
+        .color-text-custom{
+            color: #5cd2c6;
+        }
+        .bg-btn-custom{
+            background-color: #5cd2c6;
+            margin-left: 10px;
+        }
+        .bg-btn-custom:hover{
+            background-color: #8ecbcf;
+        }
+    </style>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar">
+    <nav class="navbar navbar-expand-lg border-body">
         <div class="container">
-            <a class="navbar-brand color-letra-navbar" href="home.html">Marcani</a>
+            <a class="navbar-brand color-letra-navbar" href=""><?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos'];?></a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -28,8 +52,11 @@
                     </li>
                 </ul>
                 <form class="d-flex ms-auto" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <input class="form-control bg-light" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn bg-btn-custom" type="submit">Buscar</button>
+                </form>
+                <form action="cerrar_sesion.php" class="d-flex ms-auto">
+                    <button class="btn bg-btn-custom" type="submit">Cerrar Sesión</button>
                 </form>
             </div>
         </div>
