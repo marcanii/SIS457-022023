@@ -12,11 +12,11 @@ $correo = trim($_POST['email']);
 $carrera = trim($_POST['carrera']);
 $nivelAcceso = trim($_POST['nivelAcceso']);
 
-if (agregarUsuario($ci, $nombre, $apellido, $contraseña, $sexo, $edad, $celular, $correo, $carrera, $nivelAcceso)){
-    echo "Usuario agregado correctamente";
+if(actualizarUsuario($ci, $nombre, $apellido, $contraseña, $sexo, $edad, $celular, $correo, $carrera, $nivelAcceso)){
+    echo "Usuario actualizado correctamente";
     // Espera 3 segundos antes de redirigir
     echo '<script>window.setTimeout(function(){window.location.href = "listar.php";}, 3000);</script>';
 } else {
-    echo "Error al agregar usuario";
+    echo "Error al actualizar el usuario";
 }
 ?>

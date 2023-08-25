@@ -20,7 +20,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Actualizar Usuario</h5>
                         <p class="card-text">Haz clic para actualizar un usuario existente.</p>
-                        <a href="actualizar_usuario.php" class="btn btn-warning">Actualizar</a>
+                        <a href="read.html" class="btn btn-warning">Actualizar</a>
                     </div>
                 </div>
             </div>
@@ -29,9 +29,9 @@
             <div class="col-md-3">
                 <div class="card bg-dark text-white">
                     <div class="card-body">
-                        <h5 class="card-title">Buscar Usuario</h5>
-                        <p class="card-text">Haz clic para buscar un usuario.</p>
-                        <a href="buscar_usuario.php" class="btn btn-info">Buscar</a>
+                        <h5 class="card-title">Lista de Usuarios</h5>
+                        <p class="card-text">Haz clic para listar todos los usuarios.</p>
+                        <a href="listar.php" class="btn btn-info">Lista de usuarios</a>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Eliminar Usuario</h5>
                         <p class="card-text">Haz clic para eliminar un usuario existente.</p>
-                        <a href="eliminar_usuario.php" class="btn btn-danger">Eliminar</a>
+                        <a href="delete.html" class="btn btn-danger">Eliminar</a>
                     </div>
                 </div>
             </div>

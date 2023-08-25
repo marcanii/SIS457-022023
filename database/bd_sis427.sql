@@ -23,6 +23,7 @@ CREATE TABLE persona (
     apellidos VARCHAR(50) NOT NULL,
     contraseña VARCHAR(255) NOT NULL,
     sexo CHAR(1),
+    edad INT NOT NULL,
     celular VARCHAR(15),
     correo VARCHAR(100),
     carrera VARCHAR(50),
@@ -30,16 +31,16 @@ CREATE TABLE persona (
 );
 
 -- Insertar un nuevo registro con fecha de registro automática
-INSERT INTO persona (ci, nombres, apellidos, contraseña, sexo, celular, correo, carrera)
-VALUES (10101010, 'Juan', 'Perez', 'password123', 'M', '1234567890', 'juan@example.com', 'Ingeniería');
+INSERT INTO persona (ci, nombres, apellidos, contraseña, sexo, edad, celular, correo, carrera)
+VALUES (10101010, 'Juan', 'Perez', 'password123', 'M', 20, '1234567890', 'juan@example.com', 'Ing. en Ciencias de la Computación');
 
 -- Insertar otro registro
-INSERT INTO persona (ci, nombres, apellidos, contraseña, sexo, celular, correo, carrera)
-VALUES (20202020, 'María', 'Gómez', 'securepass', 'F', '9876543210', 'maria@example.com', 'Medicina');
+INSERT INTO persona (ci, nombres, apellidos, contraseña, sexo, edad, celular, correo, carrera)
+VALUES (20202020, 'María', 'Gómez', 'securepass', 'F', 25, '9876543210', 'maria@example.com', 'Ing. Sistemas');
 
 -- Puedes omitir la columna 'fecha_registro' en la inserción para que se complete automáticamente
-INSERT INTO persona (ci, nombres, apellidos, contraseña, sexo, celular, correo, carrera)
-VALUES (30303030, 'Carlos', 'Lopez', 'supersecret', 'M', '5555555555', 'carlos@example.com', 'Derecho');
+INSERT INTO persona (ci, nombres, apellidos, contraseña, sexo, edad, celular, correo, carrera)
+VALUES (30303030, 'Carlos', 'Lopez', 'supersecret', 'M', 30, '5555555555', 'carlos@example.com', 'Ing. Civil');
 
 --SELECT * FROM persona;
 
