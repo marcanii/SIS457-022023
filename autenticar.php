@@ -1,6 +1,8 @@
 <?php
 include_once 'conexion.php';
 $correo = trim($_POST['correo']);
+# incriptar contraseña sha1
+//$contrasena = sha1(trim($_POST['contrasena']));
 $contrasena = trim($_POST['contrasena']);
 
 $query = "SELECT persona.nombres, persona.apellidos, usuario.nivel

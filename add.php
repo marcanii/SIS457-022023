@@ -4,7 +4,9 @@ include_once 'crud.php';
 $ci = trim($_POST['ci']);
 $nombre = trim($_POST['nombre']);
 $apellido = trim($_POST['apellido']);
-$contraseña = trim($_POST['contrasena']);
+# incriptar contraseña sha1 
+$contraseña = sha1(trim($_POST['contrasena']));
+echo "<script>console.log('Contraseña: $contraseña');</script>";
 $sexo = trim($_POST['sexo']);
 $edad = trim($_POST['edad']);
 $celular = trim($_POST['celular']);
